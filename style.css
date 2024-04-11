@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+}
+.MainBody{
+    height: 100vh;
+}
+.MainBody > .NavBar{
+    background: #000;
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MainBody > .NavBar > .NavBarContainer{
+    color: #fff;
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.MainBody > .NavBar >.NavBarContainer > .a{
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #db5d68;
+    height: 45px;
+    width:100px
+}
+.MainBody > .Body1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #4d3737;
+    width: 100vw;
+    height: 90vh;
+}
+.b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #000;
+    color: #fff;
+    width: 40%;
+    height: 40%;
+}
+.b > img{
+    border-radius: 50%;
+    width: 50%;
+    height: 80%;
+}
+.b > p{
+    
+    height: 10%;
+}
+.MainBody > .Body1 > .left {
+    background: #fff;
+    color: #000;
+    border-radius: 50px;
+}
+.MainBody > .Body1 > .BottomRight {
+    background: #fff;
+    color: #000;
+    border-radius: 50px;
+}
+
+@media(max-width:413px){
+    .MainBody > .NavBar > .NavBarContainer{
+        display:none;
+        background: #ddc5c5;
+        height: 350px;
+        top: 1%;
+        position: absolute;
+        flex-direction: column;
+    }
+    .MainBody > .NavBar > .HandBurgerOpen{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        left: 80%;
+        height: 70px;
+        width: 65px;
+    }
+    .MainBody > .NavBar > .HandBurgerOpen > .one{
+        background: #fff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 6px;
+        width: 50%;
+    }
+    .MainBody > .NavBar >.NavBarContainer > .HandBurgerClose{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        left: 80%;
+        height: 70px;
+        width: 65px;
+    } 
+    .MainBody >.NavBar > .NavBarContainer > .HandBurgerClose > .one{
+        background: #000;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 6px;
+        width: 50%;
+        transform: rotate(30deg);
+    }
+    .MainBody >.NavBar > .NavBarContainer > .HandBurgerClose > .two{
+        background: #000;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 6px;
+        width: 50%;
+        transform: rotate(-30deg);
+    }
+
+    .MainBody > .Body1{
+        flex-direction: column;
+        flex-wrap: nowrap
+    }
+    .b{
+        height: 20%;
+        width: 70%;
+    }
+    .left .b{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left > p{
+        font-size: small;
+    }
+}
